@@ -8,4 +8,13 @@
     <style name="list_theme" parent="@style/Theme.AppCompat.Light.NoActionBar" />
 
 
+    <style name="btnText">
+
+        <item name="android:textSize">@dimen/textSize1</item>
+        <item name="android:textStyle">bold</item>
+
+
+    </style>
+
+
 </resources>

@@ -1,10 +1,13 @@
 package com.androidworks.anil.listing;
 
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.androidworks.anil.listing.fragment.LandingPage;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +18,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar=(Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        goToLanding();
+    }
+
+    private void goToLanding() {
+        FragmentManager manager =getSupportFragmentManager();
+        LandingPage landingPage=(LandingPage) manager.findFragmentByTag(LandingPage.TAG);
+        if(landingPage==null)
+            landingPage=LandingPage.newInstance();
+
+        manager.beginTransaction()
+                .replace(R.id.frame,landingPage)
+                .commit();
     }
 
     @Override

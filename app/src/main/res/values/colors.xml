@@ -3,4 +3,6 @@
     <color name="primary_material_light">#03a9f4</color>
     <color name="primary_dark_material_light">#055e8e</color>
     <color name="accent_material_light">#2962ff</color>
+    <color name="background">#c9c9c9</color>
+
 </resources>
