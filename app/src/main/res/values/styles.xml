@@ -1,19 +1,21 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+      <item name="android:windowBackground">@android:color/white</item>
     </style>
 
     <style name="list_theme" parent="@style/Theme.AppCompat.Light.NoActionBar" />
 
 
     <style name="btnText">
-
         <item name="android:textSize">@dimen/textSize1</item>
         <item name="android:textStyle">bold</item>
+    </style>
 
-
+    <style name="cartText">
+        <item name="android:textSize">@dimen/cart</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 

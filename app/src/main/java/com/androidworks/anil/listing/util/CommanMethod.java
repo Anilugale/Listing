@@ -45,4 +45,17 @@ public  class CommanMethod {
         SimpleDateFormat fmtOut = new SimpleDateFormat("dd MMM yyyy");
         return fmtOut.format(date);
     }
+
+
+    public  static String[] city={"Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Pondicherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttaranchal", "Uttar Pradesh", "West Bengal"};
+    public  static String[] category={"Cars & Bikes",
+            "Tablets",
+            "Electronics & Appliances",
+            "Real Estate",
+            "Home & Lifestyle",
+            "Jobs",
+            "Entertainment",
+            "Services",
+            " Pets & Pet Care",
+            "Education & Learning"};
 }
