@@ -33,10 +33,7 @@ public class LandingPage extends Fragment {
         if(landingPage==null)
             landingPage=new LandingPage();
         return landingPage;
-
-
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -44,24 +41,17 @@ public class LandingPage extends Fragment {
         View view=inflater.inflate(R.layout.fragment_landing,container,false);
         init(view);
         return view;
-
     }
 
     private void init(View view) {
-
         city=(Spinner) view.findViewById(R.id.city);
         category=(RecyclerView) view.findViewById(R.id.category);
-
         setCity();
-
        //quicker
        setCategory();
-
-
     }
 
     private void setCity() {
-
         ArrayAdapter<String> monthAdapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_spinner_dropdown_item, CommanMethod.city);
         city.setAdapter(monthAdapter);
     }
@@ -76,11 +66,8 @@ public class LandingPage extends Fragment {
             cat.setName(name);
             categoryList.add(cat);
         }
-
         CategoryAdapter adapter=new CategoryAdapter(getActivity(),categoryList);
         category.setAdapter(adapter);
-
-
     }
 
 

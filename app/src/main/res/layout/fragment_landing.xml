@@ -41,7 +41,6 @@
     </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
-
         android:layout_below="@+id/cityc"
         android:layout_above="@+id/bottom_menu"
         android:layout_margin="2dp"

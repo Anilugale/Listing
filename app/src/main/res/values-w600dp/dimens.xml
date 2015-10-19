@@ -4,4 +4,5 @@
     <dimen name="textSize1">16sp</dimen>
     <dimen name="cartHeight">200dp</dimen>
     <dimen name="cart">22sp</dimen>
+    <dimen name="padding">20dp</dimen>
 </resources>
