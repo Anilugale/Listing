@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Listing</string>
+    <string name="app_name">Riokha</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="user_profile">User</string>
 
 
 </resources>

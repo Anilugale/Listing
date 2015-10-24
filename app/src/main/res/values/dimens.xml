@@ -6,5 +6,6 @@
     <dimen name="cart">18sp</dimen>
     <dimen name="cartHeight">180dp</dimen>
     <dimen name="padding">15dp</dimen>
+    <dimen name="image_size">100dp</dimen>
 
 </resources>

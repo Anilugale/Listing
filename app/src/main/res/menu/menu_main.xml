@@ -4,9 +4,9 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 
-    <item android:id="@+id/search"
-        android:title="@string/action_settings"
+    <item android:id="@+id/userProfile"
+        android:title="@string/user_profile"
         android:orderInCategory="100"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_user"
         app:showAsAction="always" />
 </menu>

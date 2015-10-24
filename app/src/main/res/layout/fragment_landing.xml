@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
     android:orientation="vertical"
+    android:background="@color/background"
 
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -51,7 +52,7 @@
     <LinearLayout
         android:id="@+id/bottom_menu"
         android:layout_alignParentBottom="true"
-        android:weightSum="5"
+        android:weightSum="4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -72,7 +73,7 @@
 
                 <TextView
                     android:layout_centerInParent="true"
-                    android:text="1"
+                    android:text="Home"
                     style="@style/btnText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -97,7 +98,7 @@
 
                 <TextView
                     android:layout_centerInParent="true"
-                    android:text="2"
+                    android:text="Search"
                     style="@style/btnText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -122,7 +123,7 @@
 
                 <TextView
                     android:layout_centerInParent="true"
-                    android:text="3"
+                    android:text="User"
                     style="@style/btnText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -147,7 +148,7 @@
 
                 <TextView
                     android:layout_centerInParent="true"
-                    android:text="4"
+                    android:text="Post Ad"
                     style="@style/btnText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -156,55 +157,9 @@
         </android.support.v7.widget.CardView>
 
 
-        <android.support.v7.widget.CardView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="50dp"
-            app:cardBackgroundColor="#edaa22"
-            android:layout_gravity="center"
-            android:descendantFocusability="blocksDescendants"
-            android:gravity="center_vertical"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:layout_centerInParent="true"
-                    android:text="5"
-                    style="@style/btnText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
 
 
-        <android.support.v7.widget.CardView
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_margin="1dp"
-            android:layout_height="50dp"
-            app:cardBackgroundColor="#edaa22"
-            android:layout_gravity="center"
-            android:descendantFocusability="blocksDescendants"
-            android:gravity="center_vertical"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_centerInParent="true"
-                    android:text="text"
-                    style="@style/btnText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </RelativeLayout>
-        </android.support.v7.widget.CardView>
 
 
 
