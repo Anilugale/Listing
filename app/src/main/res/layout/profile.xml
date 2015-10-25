@@ -26,6 +26,7 @@
     <android.support.v7.widget.CardView
         android:layout_margin="3dp"
         android:layout_width="match_parent"
+        android:id="@+id/post_ad"
         android:foreground="?selectableItemBackground"
         android:clickable="true"
         android:layout_height="wrap_content">
@@ -95,6 +96,7 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/lang_setting"
         android:foreground="?selectableItemBackground"
         android:clickable="true"
         android:layout_margin="3dp"

@@ -4,6 +4,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="user_profile">User</string>
+    <string name="submit">Submit</string>
+    <string name="ad_text">Tittle of your Ad</string>
+    <string name="add_desc">Discription of Advertisement</string>
+    <string name="ad_details">Advertisement Details</string>
 
 
 </resources>
