@@ -63,7 +63,6 @@ public class AdList extends Fragment {
         AdAdapter adapter=new AdAdapter(getActivity(),data);
         ad_list.setAdapter(adapter);
 
-
     }
 
 

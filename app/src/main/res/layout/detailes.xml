@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:orientation="vertical"
+        android:layout_above="@+id/btn_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@mipmap/default_item"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/d_image_width"
+                android:layout_height="@dimen/d_image_height" />
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:id="@+id/post_ad"
+                android:foreground="?selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:text="Advertisment Short Description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+
+                android:foreground="?selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:text="@string/technical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+
+                android:foreground="?selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:text="@string/properties"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:foreground="?selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:text="Price Information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:foreground="?selectableItemBackground"
+                android:clickable="true"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:text="Contact Details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:text="96659840802"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        style="@style/TextAppearance.AppCompat.Title"
+                        android:text="test@test.com"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:id="@+id/btn_holder"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@android:color/holo_orange_light"
+            android:foreground="?selectableItemBackground"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="@dimen/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_centerInParent="true"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:text="Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@android:color/holo_green_light"
+
+            android:foreground="?selectableItemBackground"
+            android:clickable="true"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:padding="@dimen/padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_centerInParent="true"
+                    style="@style/TextAppearance.AppCompat.Title"
+                    android:text="Call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</RelativeLayout>

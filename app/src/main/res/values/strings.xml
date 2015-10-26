@@ -8,6 +8,10 @@
     <string name="ad_text">Tittle of your Ad</string>
     <string name="add_desc">Discription of Advertisement</string>
     <string name="ad_details">Advertisement Details</string>
+    <string name="technical">technical \n
+    detail \n gose here  </string>
+    <string name="properties">property 1 \n
+    property 2 \n property 3 \n property 4</string>
 
 
 </resources>

@@ -8,5 +8,8 @@
     <dimen name="padding">15dp</dimen>
     <dimen name="image_size">100dp</dimen>
     <dimen name="add_desc">100dp</dimen>
+    <dimen name="d_image_width">300dp</dimen>
+    <dimen name="d_image_height">150dp</dimen>
+
 
 </resources>

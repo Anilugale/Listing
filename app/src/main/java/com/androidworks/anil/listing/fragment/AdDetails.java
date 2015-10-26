@@ -13,23 +13,23 @@ import com.androidworks.anil.listing.R;
 /**
  Created by Anil Ugale on 12/10/2015.
  */
-public class PostAdvetisment extends Fragment implements View.OnClickListener{
+public class AdDetails extends Fragment implements View.OnClickListener{
 
-    public static String TAG="PostAdvetisment";
-    private static PostAdvetisment landingPage;
+    public static String TAG="AdDetails";
+    private static AdDetails landingPage;
     FragmentManager fm ;
 
-    public static PostAdvetisment newInstance() {
+    public static AdDetails newInstance() {
 
         if(landingPage==null)
-            landingPage=new PostAdvetisment();
+            landingPage=new AdDetails();
         return landingPage;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        View view=inflater.inflate(R.layout.post_advertisment,container,false);
+        View view=inflater.inflate(R.layout.detailes,container,false);
         init(view);
         return view;
     }

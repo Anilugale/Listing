@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.androidworks.anil.listing.MainActivity;
 import com.androidworks.anil.listing.R;
+import com.androidworks.anil.listing.fragment.AdDetails;
 import com.androidworks.anil.listing.fragment.AdList;
 import com.androidworks.anil.listing.model.Advertisment;
 import com.androidworks.anil.listing.model.Category;
@@ -82,15 +83,15 @@ public class AdAdapter extends RecyclerView.Adapter<AdAdapter.ViewHolder> {
 
     private void goToAdList() {
         FragmentManager fm =((MainActivity)context).getSupportFragmentManager();
-        AdList fragment=(AdList) fm.findFragmentByTag(AdList.TAG);
+        AdDetails fragment=(AdDetails) fm.findFragmentByTag(AdDetails.TAG);
         if(fragment==null)
         {
-            fragment=AdList.newInstance();
+            fragment=AdDetails.newInstance();
         }
 
         fm.beginTransaction()
                 .replace(R.id.frame,fragment)
-                .addToBackStack(AdList.TAG)
+                .addToBackStack(AdDetails.TAG)
                 .commit();
     }
 }

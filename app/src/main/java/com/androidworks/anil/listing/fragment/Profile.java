@@ -17,7 +17,7 @@ public class Profile extends Fragment implements View.OnClickListener{
 
     public static String TAG="Profile";
     private static Profile landingPage;
-    FragmentManager fm ;
+
 
     public static Profile newInstance() {
 
@@ -35,7 +35,7 @@ public class Profile extends Fragment implements View.OnClickListener{
     }
 
     private void init(View view) {
-        fm =((MainActivity)getActivity()).getSupportFragmentManager();
+
         view.findViewById(R.id.post_ad).setOnClickListener(this);
         view.findViewById(R.id.lang_setting).setOnClickListener(this);
     }
@@ -47,49 +47,34 @@ public class Profile extends Fragment implements View.OnClickListener{
         switch (v.getId())
         {
             case R.id.lang_setting:
-                gotoFragment(1);
-                break;
-            case R.id.post_ad:
-
-                gotoFragment(2);
-                break;
-
-
-
-
-        }
-    }
-
-    private void gotoFragment(int fragmentName) {
-        Fragment fragment;
-        switch(fragmentName)
-        {
-
-            case 1:
-                 fragment= (LangSetting)fm.findFragmentByTag(LangSetting.TAG);
+                FragmentManager fm =((MainActivity)getActivity()).getSupportFragmentManager();
+                LangSetting  fragment= (LangSetting)fm.findFragmentByTag(LangSetting.TAG);
                 if (fragment==null) {
                     fragment=LangSetting.newInstance();
                 }
+
                 fm.beginTransaction()
                         .replace(R.id.frame,fragment)
                         .addToBackStack(LangSetting.TAG)
                         .commit();
                 break;
-            case 2:
-                 fragment= (PostAdvetisment)fm.findFragmentByTag(PostAdvetisment.TAG);
-                if (fragment==null) {
-                    fragment=PostAdvetisment.newInstance();
+            case R.id.post_ad:
+                FragmentManager fm1 =((MainActivity)getActivity()).getSupportFragmentManager();
+                PostAdvetisment   fragment1= (PostAdvetisment)fm1.findFragmentByTag(PostAdvetisment.TAG);
+                if (fragment1==null) {
+                    fragment1=PostAdvetisment.newInstance();
                 }
-                fm.beginTransaction()
-                        .replace(R.id.frame,fragment)
+                fm1.beginTransaction()
+                        .replace(R.id.frame,fragment1)
                         .addToBackStack(PostAdvetisment.TAG)
                         .commit();
                 break;
 
+
+
+
         }
-
-
-
-
     }
+
+
 }

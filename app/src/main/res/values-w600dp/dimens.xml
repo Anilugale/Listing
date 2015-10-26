@@ -6,4 +6,6 @@
     <dimen name="cart">22sp</dimen>
     <dimen name="padding">20dp</dimen>
     <dimen name="image_size">130dp</dimen>
+    <dimen name="d_image_width">400dp</dimen>
+    <dimen name="d_image_height">200dp</dimen>
 </resources>
