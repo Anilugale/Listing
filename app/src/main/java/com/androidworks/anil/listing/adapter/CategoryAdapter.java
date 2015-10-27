@@ -23,7 +23,8 @@ import java.util.List;
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
 
   private Activity context;
-    private List<Category>  catData;
+  private List<Category>  catData;
+    private static int type;
 
     public CategoryAdapter(Activity context, List<Category> catData) {
         this.context = context;
@@ -60,6 +61,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
                 .replace(R.id.frame,fragment)
                 .addToBackStack(AdList.TAG)
                 .commit();
+    }
+
+
+    public static void setType(int type) {
+        CategoryAdapter.type = type;
     }
 
     @Override

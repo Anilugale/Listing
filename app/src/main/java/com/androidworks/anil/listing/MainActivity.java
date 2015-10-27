@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.androidworks.anil.listing.fragment.AdList;
 import com.androidworks.anil.listing.fragment.LandingPage;
@@ -20,6 +21,7 @@ import com.androidworks.anil.listing.util.CommanMethod;
 public class MainActivity extends AppCompatActivity implements   NavigationView.OnNavigationItemSelectedListener  {
 
     Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -127,4 +129,6 @@ public class MainActivity extends AppCompatActivity implements   NavigationView.
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
