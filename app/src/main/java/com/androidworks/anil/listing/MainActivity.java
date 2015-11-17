@@ -16,6 +16,7 @@ import android.view.View;
 import com.androidworks.anil.listing.fragment.AdList;
 import com.androidworks.anil.listing.fragment.LandingPage;
 import com.androidworks.anil.listing.fragment.Profile;
+import com.androidworks.anil.listing.fragment.Regisration;
 import com.androidworks.anil.listing.util.CommanMethod;
 
 public class MainActivity extends AppCompatActivity implements   NavigationView.OnNavigationItemSelectedListener  {
@@ -70,12 +71,12 @@ public class MainActivity extends AppCompatActivity implements   NavigationView.
 
     public void goToProfile() {
         FragmentManager fm =getSupportFragmentManager();
-        Profile fragment=(Profile) fm.findFragmentByTag(Profile.TAG);
+        Regisration fragment=(Regisration) fm.findFragmentByTag(Regisration.TAG);
         if(fragment==null)
-            fragment=Profile.newInstance();
+            fragment=Regisration.newInstance();
         fm.beginTransaction()
                 .replace(R.id.frame,fragment)
-                .addToBackStack(Profile.TAG)
+                .addToBackStack(Regisration.TAG)
                 .commit();
     }
 

@@ -41,14 +41,11 @@ public class NetworkRequest {
                     @Override
                     public void onResponse(JSONObject response) {
                         VolleyLog.e(TAG, response.toString());
-                        try {
-                            if(response.getInt(RESULT)==0)
-                            {
+
+
                                 responce.success(response,responseCode);
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+
+
 
                     }
                 }, new Response.ErrorListener() {

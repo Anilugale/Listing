@@ -12,6 +12,11 @@
     detail \n gose here  </string>
     <string name="properties">property 1 \n
     property 2 \n property 3 \n property 4</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="fist_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email ID</string>
 
 
 </resources>

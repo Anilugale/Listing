@@ -16,7 +16,10 @@ import java.util.List;
  */
 public  class CommanMethod {
 
-
+public static String BaseURL="http://riokha.com/index.php?route=webserviceAPI/customer/";
+public static String Register=BaseURL+"register";
+public static String Tag_Result="Result";
+public static String Tag_Message="Message";
 
  public static void share(Context context,String shareSting)
  {
